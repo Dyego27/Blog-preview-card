@@ -10,18 +10,31 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid black;
-    background-color:  hsl(0, 0%, 100%);
     width: 400px;
     height: auto;
+    border: 2px solid black;
+    background-color:  hsl(0, 0%, 100%);
     border-radius: 15px;
-    gap: 10px;
 }
 .img{
     margin-top: 20px;
 }
 .img img{
     border-radius: 10px;
+}
+.minicontainer{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 31px;
+    width: 73px;
+    height: 30px;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    margin-top: 15px;
 }
 h2:hover{
     color:  hsl(47, 88%, 63%);
