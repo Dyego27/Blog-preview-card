@@ -1,42 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-body{
-    background-color:  hsl(47, 88%, 63%);
-    font-family: "Figtree", sans-serif; 
-    font-weight: 400;
-    font-size: 16px;
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container{
+img{
+    display: block;
+    max-width: 100%;
+}
+h1{
+    line-height: 1.1;
+}
+body{
+    font-family: "Figtree",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(0, 0%, 42%);
+    background-color: hsl(47, 88%, 63%);
+}
+.blog-category{
+    display: inline-block;
+    color:black;
+    font-weight: 600;
+    padding: .5rem .8rem;
+    border-radius: .3rem;
+    background-color: hsl(47, 88%, 63%);
+}
+.blog-meta{
+    font-size: 14px;
+    color: black;
+
+}
+.blog-title{
+    color: black;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.blog-title:hover{
+    color: hsl(47, 88%, 63%);
+}
+.avatar-nome{
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+
+}
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 400px;
-    height: auto;
-    border: 2px solid black;
-    background-color:  hsl(0, 0%, 100%);
-    border-radius: 15px;
+    min-height: 100dvh;
 }
-.img{
-    margin-top: 20px;
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 23em;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 7px 7px 0 black;
+    transition: box-shadow 0.7s ease;
 }
-.img img{
-    border-radius: 10px;
+.container > * + * {
+    margin-top: 1rem;
 }
-.minicontainer{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    margin-left: 31px;
-    width: 73px;
-    height: 30px;
-    background-color: hsl(47, 88%, 63%);
-    border-radius: 4px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 10px;
-    margin-top: 15px;
+.container:hover{
+    box-shadow: 10px 10px 0 black;
 }
-h2:hover{
-    color:  hsl(47, 88%, 63%);
-    cursor: pointer;
+.img-autor{
+    width: 2.5rem;
+}
+.img-blog{
+    border-radius: .8rem;
 }
